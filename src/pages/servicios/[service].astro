@@ -1,0 +1,22 @@
+---
+export interface Props {
+    service: Number;
+}
+
+export function getStaticPaths() {
+    return [
+        { params: { service: 1 } },
+        { params: { service: 2 } },
+        { params: { service: 3 } },
+        { params: { service: 4 } },
+    ];
+}
+
+const { service } = Astro.props;
+
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="SIOTEC - Servicios">
+
+</Layout>
