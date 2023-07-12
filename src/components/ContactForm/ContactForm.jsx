@@ -9,12 +9,12 @@ export default function ContactForm() {
         // emailSending(data)
     };
 
-    const inputCls = "rounded-t bg-slate-300 block w-full p-1"
-    const errorCls = "rounded-b bg-red-500 transition-all opacity-0"
+    const inputCls = "md:rounded-t bg-slate-300 block w-full p-1"
+    const errorCls = "md:rounded-b bg-red-500 transition-all opacity-0"
     const labelCls = "mt-2"
 
     return (
-        <form onSubmit={handleSubmit(data => onSubmit(data))} className="flex flex-col m-auto w-1/2">
+        <form onSubmit={handleSubmit(data => onSubmit(data))} className="flex flex-col w-full m-auto md:w-1/2">
 
             <label className={labelCls}>
                 Nombre - Empresa
@@ -25,7 +25,7 @@ export default function ContactForm() {
                         message: "El nombre debe tener menos de 40 caracteres"
                     },
                 })} type="text"
-                    className={`${inputCls} ${errors.name?.message ? "" : "rounded-b"} mt-0`} />
+                    className={`${inputCls} ${errors.name?.message ? "" : "md:rounded-b"} mt-0`} />
             </label>
             <p className={`${errorCls} ${errors.name?.message ? "opacity-100 p-1" : ""}`}>{errors.name?.message}</p>
 
@@ -34,7 +34,7 @@ export default function ContactForm() {
                 <input {...register("phone", {
                     required: "Este campo es requerido",
                 })} type="number"
-                    className={`${inputCls} ${errors.phone?.message ? "" : "rounded-b"}`} />
+                    className={`${inputCls} ${errors.phone?.message ? "" : "md:rounded-b"}`} />
             </label>
             <p className={`${errorCls} ${errors.phone?.message ? "opacity-100 p-1" : ""}`}>{errors.phone?.message}</p>
 
@@ -43,7 +43,7 @@ export default function ContactForm() {
                 <input {...register("email", {
                     required: "Este campo es requerido"
                 })} type="email"
-                    className={`${inputCls} ${errors.email?.message ? "" : "rounded-b"}`} />
+                    className={`${inputCls} ${errors.email?.message ? "" : "md:rounded-b"}`} />
             </label>
             <p className={`${errorCls} ${errors.email?.message ? "opacity-100 p-1" : ""}`}>{errors.email?.message}</p>
 
@@ -52,7 +52,7 @@ export default function ContactForm() {
                 <textarea {...register("message", {
                     required: "Este campo es requerido",
                 })} type="text"
-                    className={`${inputCls} ${errors.message?.message ? "" : "rounded-b"} resize-none`} />
+                    className={`${inputCls} ${errors.message?.message ? "" : "md:rounded-b"} resize-none`} />
             </label>
             <p className={`${errorCls} ${errors.message?.message ? "opacity-100 p-1" : ""}`}>{errors.message?.message}</p>
 
