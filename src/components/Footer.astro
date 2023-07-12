@@ -2,14 +2,15 @@
 import SocialMedia from "./SocialMedia.astro";
 ---
 
-<footer class="flex justify-between p-6 bg-footer text-white">
+<footer class="flex items-center justify-between py-2 bg-footer text-white">
+    <h1 class="font-bold text-lg ml-4">
+        SIOTEC<span class="hidden sm:inline">
+            - Servicios Integrales Industriales</span>
+    </h1>
 
-    <h1 class="font-bold">SIOTEC<span class="hidden sm:inline"> - Servicios Integrales Industriales</span></h1>
-
-    <ul class="flex">
-        <SocialMedia media="Facebook" />
-        <SocialMedia media="Instagram" />
-        <SocialMedia media="WhatsApp" />
+    <ul class="flex items-center">
+        <SocialMedia mediaId="1" />
+        <SocialMedia mediaId="2" />
+        <SocialMedia mediaId="3" />
     </ul>
-
 </footer>
