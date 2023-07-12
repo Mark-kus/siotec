@@ -1,7 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import trabajos from "../seeds/trabajos";
 ---
 
-<Layout title="SIOTEC - Trabajos" >
-
+<Layout title="SIOTEC - Trabajos">
+    {
+        trabajos.map((trabajo) => {
+            return (
+                <section>
+                    <h1>{trabajo.title}</h1>
+                    <p>{trabajo.description}</p>
+                    {trabajo.images.map(image => {
+                        return <image src={image} alt="Ejemplo del trabajo" />
+                    })}
+                </section>
+            );
+        })
+    }
 </Layout>
