@@ -1,6 +1,6 @@
-import facebook from "/public/socialMedia/facebook.svg";
-import instagram from "/public/socialMedia/instagram.svg";
-import whatsapp from "/public/socialMedia/whatsapp.svg";
+import facebook from "/socialMedia/facebook.svg";
+import instagram from "/socialMedia/instagram.svg";
+import whatsapp from "/socialMedia/whatsapp.svg";
 
 export default [
     {
