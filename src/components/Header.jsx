@@ -1,9 +1,9 @@
 import { useState } from "react"
+import Navbar from "./Navbar"
 
 export default function Header() {
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
 
-  const dropdownContentCls = "p-2 block hover:bg-slate-700"
   const hamburgerCls = "my-1 block h-0.5 rounded-sm bg-white"
 
   return (
@@ -25,11 +25,12 @@ export default function Header() {
       </button>
 
       <aside
-        className={`absolute right-0 top-0 z-10 flex h-screen w-1/2 
-										flex-col overflow-y-hidden bg-header duration-300 
-										ease-linear	${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+        className={`absolute right-0 top-0 z-10 flex h-screen w-1/2
+										flex-col overflow-y-hidden duration-300 bg-header
+										ease-linear	${showMenu ? 'translate-x-0' : 'translate-x-full'}
+                    md:h-auto md:relative md:overflow-visible md:w-auto md:hidden`}>
         <button
-          className="block lg:hidden px-6 py-6"
+          className="block md:hidden px-6 py-6"
           onClick={() => setShowMenu(false)}>
           <svg
             className="fill-current"
@@ -42,23 +43,12 @@ export default function Header() {
           </svg>
         </button>
 
-        <nav className="flex flex-col md:flex-row items-center justify-center text-xl">
-          <ul className="px-4 dropdown relative inline-block">
-
-            <li className="cursor-pointer">Servicios</li>
-
-            <ul className="dropdown-content hidden absolute z-10 shadow shadow-gray-800 bg-header border border-slate-700">
-              <a href="/servicios/1" className={dropdownContentCls}>Refrigeración</a>
-              <a href="/servicios/2" className={dropdownContentCls}>Mantenimiento</a>
-              <a href="/servicios/3" className={dropdownContentCls}>Sistemas</a>
-              <a href="/servicios/4" className={dropdownContentCls}>Seguridad</a>
-            </ul>
-
-          </ul>
-          <a href="/trabajos" className="px-4">Trabajos</a>
-          <a href="/contacto" className="px-4">Contacto</a>
-        </nav>
+        <Navbar />
       </aside>
+
+      <div className="hidden md:block">
+        <Navbar />
+      </div>
 
       <style jsx="true">
         {`.dropdown:hover .dropdown-content {
