@@ -9,8 +9,8 @@ export default function ContactForm() {
         // emailSending(data)
     };
 
-    const inputCls = "md:rounded-t bg-slate-300 block w-full p-1"
-    const errorCls = "md:rounded-b bg-red-500 transition-all opacity-0"
+    const inputCls = "md:rounded-t dark:bg-dark-header-background block w-full p-1"
+    const errorCls = "md:rounded-b dark:bg-red-700 bg-red-500 transition-all opacity-0"
     const labelCls = "mt-2"
 
     return (

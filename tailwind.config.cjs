@@ -30,12 +30,12 @@ module.exports = {
 					header: {
 						background: '#333333',
 						text: "#FFFFFF",
-						border: "#FFFFFF",
+						border: "#4f4f4f",
 					},
 					footer: {
 						background: '#333333',
 						text: "#E5E5E5",
-						border: "#E5E5E5",
+						border: "#4f4f4f",
 					},
 				}
 			}
