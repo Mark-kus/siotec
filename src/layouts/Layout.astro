@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css"
 export interface Props {
 	title: string;
 }
@@ -10,16 +11,31 @@ import Header from '../components/Header.jsx'
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="SIOTEC">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="keywords" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Mark-kus">
+
+		<meta name="geo.region" content="AR">
+		<meta name="geo.placename" content="Buenos Aires">
+
+		<meta name="og:title" content="SIOTEC">
+		<meta name="og:description" content="">
+		<meta name="og:image" content="URL de imagen">
+
 		<meta name="generator" content={Astro.generator} />
+		
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<script src="https://kit.fontawesome.com/4652da1d0d.js" crossorigin="anonymous"></script>
+
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col justify-between min-h-screen bg-background">
+	<body class="flex flex-col justify-between min-h-screen bg-light-page-background dark:bg-dark-page-background text-light-page-text dark:text-dark-page-text">
 		<Header client:load />
 		<slot />
 		<Footer />

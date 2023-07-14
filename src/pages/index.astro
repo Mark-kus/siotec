@@ -1,16 +1,21 @@
 ---
-import image from '/refrigeracion1.jpg'
+import image from "/refrigeracion1.jpg";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="SIOTEC">
 	<main class="flex flex-col md:flex-row m-6">
-		<p class="text-lg my-auto md:mr-2">
-			Somos una empresa formada por técnicos especializados dentro del
-			área de instalaciones y mantenimiento industrial. Podemos
-			desarrollar todo tipo de proyectos y atender cualquier necesidad que
-			pueda surgir en los distintos departamentos técnicos de su empresa.
-		</p>
-		<img src={image} alt="mantenimiento" width="800" height="700">
+		<article class="text-lg my-auto md:mr-2">
+			<p>
+				Somos una empresa formada por técnicos especializados dentro del
+				área de instalaciones y mantenimiento industrial. Podemos
+				desarrollar todo tipo de proyectos y atender cualquier necesidad
+				que pueda surgir en los distintos departamentos técnicos de su
+				empresa.
+			</p>
+		</article>
+		<figure class="md:w-3/4">
+			<img src={image} alt="Imagen de mantenimiento industrial" />
+		</figure>
 	</main>
 </Layout>

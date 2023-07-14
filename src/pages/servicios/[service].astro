@@ -12,11 +12,14 @@ export function getStaticPaths() {
     ];
 }
 
-const { service } = Astro.props;
+const { service } = Astro.params;
 
 import Layout from "../../layouts/Layout.astro";
+
+import servicios from "../../seeds/servicios";
+const servicio = servicios.find(servicio => Number(servicio.id) == Number(service))
 ---
 
 <Layout title="SIOTEC - Servicios">
-
+    {servicio.title}
 </Layout>

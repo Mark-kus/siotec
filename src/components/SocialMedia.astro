@@ -1,11 +1,14 @@
 ---
 export interface Props {
-    media: String
+    mediaId: String;
 }
 
-const { media } = Astro.props;
+const { mediaId } = Astro.props;
+
+import socialMedia from "../seeds/socialMedia";
+const media = socialMedia.find((media) => Number(media.id) == Number(mediaId));
 ---
 
-<div>
-    <h1 class="mx-2">{media}</h1>
-</div>
+<a href={media.url} target="_blank">
+    <i class={`${media.icon} mx-2 md:mx-4 w-8 md:w-12`}></i>
+</a>
