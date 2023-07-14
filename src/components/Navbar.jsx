@@ -8,7 +8,7 @@ export default function Navbar() {
 
                 <li className="cursor-pointer">Servicios</li>
 
-                <ul className="dropdown-content hidden absolute -right-6 z-10 shadow shadow-gray-800 bg-header border border-slate-700">
+                <ul className="dropdown-content hidden absolute -right-6 z-10 shadow shadow-gray-800 bg-light-header-background border border-light-header-border dark:bg-dark-header-background dark:border-dark-header-border">
                     <a href="/servicios/1" className={dropdownContentCls}>Refrigeración</a>
                     <a href="/servicios/2" className={dropdownContentCls}>Mantenimiento</a>
                     <a href="/servicios/3" className={dropdownContentCls}>Sistemas</a>

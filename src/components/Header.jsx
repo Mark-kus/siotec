@@ -7,8 +7,8 @@ export default function Header() {
   const hamburgerCls = "my-1 block h-0.5 rounded-sm bg-white"
 
   return (
-    <header className="flex justify-between bg-header text-white
-    items-center">
+    <header className="flex justify-between bg-light-header-background dark:bg-dark-header-background text-light-header-text border-b border-b-light-header-border dark:border-b-dark-header-border
+    items-center dark:text-dark-header-text">
       <a href="/" className="font-bold p-4 text-xl md:text-3xl">Grupo SIOTEC</a>
 
       <button className="h-5 w-5 mr-4 md:hidden"
@@ -26,7 +26,7 @@ export default function Header() {
 
       <aside
         className={`absolute right-0 top-0 z-10 flex h-screen w-1/2
-										flex-col overflow-y-hidden duration-300 bg-header
+										flex-col overflow-y-hidden duration-300 bg-light-header-background
 										ease-linear	${showMenu ? 'translate-x-0' : 'translate-x-full'}
                     md:h-auto md:relative md:overflow-visible md:w-auto md:hidden`}>
         <button

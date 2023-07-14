@@ -17,9 +17,10 @@ import Header from '../components/Header.jsx'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<script src="https://kit.fontawesome.com/4652da1d0d.js" crossorigin="anonymous"></script>
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col justify-between min-h-screen bg-background">
+	<body class="flex flex-col justify-between min-h-screen bg-light-page-background dark:bg-dark-page-background text-light-page-text dark:text-dark-page-text">
 		<Header client:load />
 		<slot />
 		<Footer />
