@@ -11,9 +11,16 @@ import trabajos from "../seeds/trabajos";
                 <section>
                     <h1>{trabajo.title}</h1>
                     <p>{trabajo.description}</p>
-                    {trabajo.images.map(image => {
-                        return <image src={image} alt="Ejemplo del trabajo" />
-                    })}
+                    <ul class="images-container">
+                        {trabajo.images.map((image, index) => (
+                            <li>
+                                <img
+                                    src={image}
+                                    alt={`Ejemplo de trabajo ${index + 1}`}
+                                />
+                            </li>
+                        ))}
+                    </ul>
                 </section>
             );
         })
