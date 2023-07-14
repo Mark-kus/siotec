@@ -1,4 +1,11 @@
-export default [
+interface SocialMedia {
+    id: Number
+    name: String
+    url: String
+    icon: String
+}
+
+const socialMedia: SocialMedia[] = [
     {
         id: 1,
         name: "Facebook",
@@ -18,3 +25,5 @@ export default [
         icon: "fa-brands fa-whatsapp fa-2xl"
     },
 ]
+
+export default socialMedia
