@@ -20,23 +20,27 @@ module.exports = {
 						text: "#E5E5E5",
 						border: "#333333",
 					},
+					error: "#FF1E1E",
+					input: "#0F3460",
 				},
 				dark: {
 					page: {
-						background: '#222222',
+						background: '#071952',
 						text: "#FFFFFF",
-						border: "#E5E5E5",
+						border: "#46458C",
 					},
 					header: {
-						background: '#333333',
+						background: '#001C30',
 						text: "#FFFFFF",
-						border: "#4f4f4f",
+						border: "#46458C",
 					},
 					footer: {
-						background: '#333333',
+						background: '#1D5B79',
 						text: "#E5E5E5",
-						border: "#4f4f4f",
+						border: "#46458C",
 					},
+					error: "#ED2B2A",
+					input: "#F7E6C4",
 				}
 			}
 		},
