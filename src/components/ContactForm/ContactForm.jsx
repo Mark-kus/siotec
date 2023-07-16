@@ -79,7 +79,7 @@ export default function ContactForm() {
                 <p className={`${errorCls} ${errors.message?.message ? "opacity-100 p-1" : ""}`}>{errors.message?.message}</p>
             </div>
 
-            <button className="dark:bg-green-700 bg-blue-700 font-bold text-white mt-2 p-2" type="submit">
+            <button className="bg-blue-700 text-white mt-2 p-2" type="submit">
                 Enviar
             </button>
 

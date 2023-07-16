@@ -24,7 +24,7 @@ module.exports = {
 						border: "#333333",
 					},
 					error: "#FF1E1E",
-					input: "#0F3460",
+					input: "#1B6B93",
 				},
 				// dark: {
 				// 	page: {
