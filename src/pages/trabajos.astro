@@ -6,12 +6,12 @@ import trabajos from "../seeds/trabajos";
 
 <Layout title="SIOTEC - Trabajos">
     <section class="flex flex-col">
-        <h1 class="text-center text-3xl m-4 mt-10">Estos son los servicios que se encuentran activos en SIOTEC:</h1>
+        <h1 class="text-center text-xl md:text-3xl m-4 mt-10">Estos son los servicios que se encuentran activos en SIOTEC:</h1>
         {
             trabajos.map((trabajo, i) => {
                 return (
                     <article
-                        class={`${i % 2 === 1 ? "self-end pr-10 text-right" : "pl-10"} p-2 mt-8 shadow-lg max-w-5xl`}
+                        class={`${i % 2 === 1 ? "self-end md:pr-10 text-right" : "md:pl-10"} p-4 md:mt-8 shadow-lg max-w-5xl`}
                     >
                         <h1>{trabajo.title}</h1>
                         <p>{trabajo.description}</p>
