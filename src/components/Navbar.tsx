@@ -1,20 +1,20 @@
 import type React from "react"
+import servicios from '../seeds/servicios'
 
 const Navbar: React.FC = () => {
 
-    const dropdownContentCls = "p-2 block hover:bg-slate-700"
+    const dropdownContentCls = "p-2 hover:bg-slate-700 hover:text-white transition-colors text-sm float-left w-full"
 
     return (
-        <nav className="flex flex-col md:flex-row items-center justify-center text-2xl md:text-xl">
+        <nav className="flex flex-col md:flex-row items-center justify-center text-xl md:text-lg">
             <ul className="p-4 md:px-4 dropdown relative inline-block">
 
                 <li className="cursor-pointer">Servicios</li>
 
-                <ul className="dropdown-content hidden absolute -right-7 z-10 shadow shadow-gray-800 bg-light-header-background border border-light-header-border dark:bg-dark-header-background dark:border-dark-header-border">
-                    <li><a href="/servicios/1" className={dropdownContentCls}>Refrigeración</a></li>
-                    <li><a href="/servicios/2" className={dropdownContentCls}>Mantenimiento</a></li>
-                    <li><a href="/servicios/3" className={dropdownContentCls}>Sistemas</a></li>
-                    <li><a href="/servicios/4" className={dropdownContentCls}>Seguridad</a></li>
+                <ul className="dropdown-content md:columns-2 gap-0 hidden absolute -right-5 md:-right-24 z-10 shadow-lg bg-light-header-background border border-light-header-border dark:bg-dark-header-background dark:border-dark-header-border">
+                    {servicios.map(servicio => {
+                        return <li key={servicio.id}><a href={`/servicios/${servicio.id}`} className={dropdownContentCls}>{servicio.title}</a></li>
+                    })}
                 </ul>
 
             </ul>

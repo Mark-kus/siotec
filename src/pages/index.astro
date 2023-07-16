@@ -4,9 +4,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="SIOTEC">
-	<main class="flex flex-col md:flex-row m-6">
-		<article class="text-lg my-auto md:mr-2">
-			<p>
+	<main class="flex flex-col md:flex-row">
+		<article class="text-lg my-auto">
+			<p class="md:w-1/2 bg-light-page-background md:pl-10 p-4 shadow-lg">
 				Somos una empresa formada por técnicos especializados dentro del
 				área de instalaciones y mantenimiento industrial. Podemos
 				desarrollar todo tipo de proyectos y atender cualquier necesidad
@@ -14,8 +14,6 @@ import Layout from "../layouts/Layout.astro";
 				empresa.
 			</p>
 		</article>
-		<figure class="md:w-3/4">
-			<img src={image} alt="Imagen de mantenimiento industrial" />
-		</figure>
+			<img class="w-1/2 hidden" src="https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjbmljb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" aria-disabled="true" alt="Imagen de un monton de engranajes" />
 	</main>
 </Layout>

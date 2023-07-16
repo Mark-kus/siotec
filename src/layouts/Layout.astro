@@ -1,41 +1,51 @@
 ---
-import "../styles/global.css"
+import "../styles/global.css";
 export interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
 
-import Footer from '../components/Footer.astro'
-import Header from '../components/Header.jsx'
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.jsx";
 ---
 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="SIOTEC">
-		<meta name="keywords" content="">
+		<meta name="description" content="SIOTEC" />
+		<meta name="keywords" content="" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="author" content="Mark-kus">
+		<meta name="author" content="Mark-kus" />
 
-		<meta name="geo.region" content="AR">
-		<meta name="geo.placename" content="Buenos Aires">
+		<meta name="geo.region" content="AR" />
+		<meta name="geo.placename" content="Buenos Aires" />
 
-		<meta name="og:title" content="SIOTEC">
-		<meta name="og:description" content="">
-		<meta name="og:image" content="URL de imagen">
+		<meta name="og:title" content="SIOTEC" />
+		<meta name="og:description" content="" />
+		<meta name="og:image" content="URL de imagen" />
 
 		<meta name="generator" content={Astro.generator} />
-		
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<script src="https://kit.fontawesome.com/4652da1d0d.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/jpg" href="/siotec.jpg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/4652da1d0d.js"
+			crossorigin="anonymous"></script>
 
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col justify-between min-h-screen bg-light-page-background dark:bg-dark-page-background text-light-page-text dark:text-dark-page-text">
+	<body
+		class="flex flex-col justify-between min-h-screen bg-light-page-background dark:bg-dark-page-background text-light-page-text dark:text-dark-page-text"
+	>
 		<Header client:load />
 		<slot />
 		<Footer />

@@ -3,41 +3,48 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			fontFamily : {
+				"sans": ['Roboto', 'sans-serif'],
+			},
 			colors: {
 				light: {
 					page: {
-						background: '#FFFFFF',
-						text: "#333333",
+						background: '#025464',
+						text: "#E8AA42",
 						border: "#333333",
 					},
 					header: {
-						background: '#002F5F',
-						text: "#FFFFFF",
+						background: '#E8AA42',
+						text: "#025464",
 						border: "#333333",
 					},
 					footer: {
-						background: '#002F5F',
-						text: "#E5E5E5",
+						background: '#E8AA42',
+						text: "#025464",
 						border: "#333333",
 					},
+					error: "#FF1E1E",
+					input: "#1B6B93",
 				},
-				dark: {
-					page: {
-						background: '#222222',
-						text: "#FFFFFF",
-						border: "#E5E5E5",
-					},
-					header: {
-						background: '#333333',
-						text: "#FFFFFF",
-						border: "#4f4f4f",
-					},
-					footer: {
-						background: '#333333',
-						text: "#E5E5E5",
-						border: "#4f4f4f",
-					},
-				}
+				// dark: {
+				// 	page: {
+				// 		background: '#071952',
+				// 		text: "#FFFFFF",
+				// 		border: "#46458C",
+				// 	},
+				// 	header: {
+				// 		background: '#001C30',
+				// 		text: "#FFFFFF",
+				// 		border: "#46458C",
+				// 	},
+				// 	footer: {
+				// 		background: '#1D5B79',
+				// 		text: "#E5E5E5",
+				// 		border: "#46458C",
+				// 	},
+				// 	error: "#ED2B2A",
+				// 	input: "#F7E6C4",
+				// }
 			}
 		},
 	},

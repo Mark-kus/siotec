@@ -9,8 +9,8 @@ export default function ContactForm() {
         // emailSending(data)
     };
 
-    const inputCls = "md:rounded-t dark:bg-dark-header-background bg-slate-300 block w-full p-1"
-    const errorCls = "md:rounded-b dark:bg-red-700 bg-red-500 transition-all opacity-0"
+    const inputCls = "md:rounded-t dark:bg-dark-input bg-light-input block w-full p-1"
+    const errorCls = "md:rounded-b dark:bg-dark-error bg-light-error text-white transition-all opacity-0"
     const labelCls = "mt-2"
 
     return (
@@ -79,7 +79,7 @@ export default function ContactForm() {
                 <p className={`${errorCls} ${errors.message?.message ? "opacity-100 p-1" : ""}`}>{errors.message?.message}</p>
             </div>
 
-            <button className="dark:bg-black bg-blue-700 text-white mt-2 p-2" type="submit">
+            <button className="bg-blue-700 text-white mt-2 p-2" type="submit">
                 Enviar
             </button>
 
