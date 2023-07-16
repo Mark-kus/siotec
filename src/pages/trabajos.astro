@@ -5,24 +5,29 @@ import trabajos from "../seeds/trabajos";
 ---
 
 <Layout title="SIOTEC - Trabajos">
-    {
-        trabajos.map((trabajo) => {
-            return (
-                <section>
-                    <h1>{trabajo.title}</h1>
-                    <p>{trabajo.description}</p>
-                    <ul class="images-container">
-                        {trabajo.images.map((image, index) => (
-                            <li>
-                                <img
-                                    src={image}
-                                    alt={`Ejemplo de trabajo ${index + 1}`}
-                                />
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-            );
-        })
-    }
+    <section class="flex flex-col">
+        <h1 class="text-center text-3xl m-4 mt-10">Estos son los servicios que se encuentran activos en SIOTEC:</h1>
+        {
+            trabajos.map((trabajo, i) => {
+                return (
+                    <article
+                        class={`${i % 2 === 1 ? "self-end pr-10 text-right" : "pl-10"} p-2 mt-8 shadow-lg max-w-5xl`}
+                    >
+                        <h1>{trabajo.title}</h1>
+                        <p>{trabajo.description}</p>
+                        <ul class="images-container">
+                            {trabajo.images.map((image) => (
+                                <li>
+                                    <img
+                                        src={image}
+                                        alt={`Ejemplo de trabajo de ${trabajo.title}`}
+                                    />
+                                </li>
+                            ))}
+                        </ul>
+                    </article>
+                );
+            })
+        }
+    </section>
 </Layout>
