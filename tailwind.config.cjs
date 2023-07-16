@@ -9,18 +9,18 @@ module.exports = {
 			colors: {
 				light: {
 					page: {
-						background: '#FAFAFA',
-						text: "#333333",
+						background: '#025464',
+						text: "#E8AA42",
 						border: "#333333",
 					},
 					header: {
-						background: '#002F5F',
-						text: "#FFFFFF",
+						background: '#E8AA42',
+						text: "#025464",
 						border: "#333333",
 					},
 					footer: {
-						background: '#002F5F',
-						text: "#E5E5E5",
+						background: '#E8AA42',
+						text: "#025464",
 						border: "#333333",
 					},
 					error: "#FF1E1E",
