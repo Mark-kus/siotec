@@ -14,7 +14,7 @@ export default function ContactForm() {
     const labelCls = "mt-2"
 
     return (
-        <form onSubmit={handleSubmit(data => onSubmit(data))} className="flex flex-col w-full m-auto md:w-1/2">
+        <form onSubmit={handleSubmit(data => onSubmit(data))} className="flex flex-col">
 
             <div className="form-group">
                 <label htmlFor="name" className={labelCls}>
