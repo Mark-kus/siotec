@@ -1,8 +1,8 @@
 interface SocialMedia {
-    id: Number
-    name: String
-    url: String
-    icon: String
+    id: number
+    name: string
+    url: string
+    icon: string
 }
 
 const socialMedia: SocialMedia[] = [
