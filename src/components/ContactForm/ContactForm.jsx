@@ -1,12 +1,21 @@
 import { useForm } from "react-hook-form"
 import emailSending from "./emailSending";
+import { useState } from "react";
 
 export default function ContactForm() {
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    const [sending, setSending] = useState(false)
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
-    const onSubmit = data => {
-        console.log("Se subieron los datos", data)
-        // emailSending(data)
+    const onSubmit = async (data) => {
+        let response
+        setSending(true)
+        if (!Object.keys(errors).length) response = await emailSending(data)
+        if (response.status === "200") {
+            reset()
+        } else {
+            alert("")
+        }
+        setSending(false)
     };
 
     const inputCls = "md:rounded-t dark:bg-dark-input bg-light-input block w-full p-1"
@@ -79,7 +88,7 @@ export default function ContactForm() {
                 <p className={`${errorCls} ${errors.message?.message ? "opacity-100 p-1" : ""}`}>{errors.message?.message}</p>
             </div>
 
-            <button className="bg-blue-700 text-white mt-2 p-2" type="submit">
+            <button disabled={sending} className={`bg-blue-700 text-white mt-2 p-2 ${sending ? "bg-blue-900" : ""}`} type="submit">
                 Enviar
             </button>
 
