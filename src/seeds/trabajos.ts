@@ -1,8 +1,8 @@
 interface Trabajos {
-    id: Number
-    title: String
-    description: String
-    images: String[]
+    id: number
+    title: string
+    description: string
+    images: string[]
 }
 
 const trabajos: Trabajos[] = [
