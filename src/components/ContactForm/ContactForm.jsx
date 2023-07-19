@@ -1,21 +1,39 @@
 import { useForm } from "react-hook-form"
 import emailSending from "./emailSending";
+import { ToastContainer, toast } from 'react-toastify';
 import { useState } from "react";
+
+import 'react-toastify/dist/ReactToastify.min.css';
 
 export default function ContactForm() {
     const [sending, setSending] = useState(false)
     const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
     const onSubmit = async (data) => {
-        let response
         setSending(true)
-        if (!Object.keys(errors).length) response = await emailSending(data)
-        if (response.status === "200") {
-            reset()
-        } else {
-            alert("")
-        }
-        setSending(false)
+        toast.promise(
+            emailSending(data),
+            {
+                pending: {
+                    render() {
+                        return "Estamos enviando tu mail"
+                    },
+                },
+                success: {
+                    render() {
+                        reset()
+                        setSending(false)
+                        return `Gracias! Ya enviamos tu mail`
+                    },
+                },
+                error: {
+                    render() {
+                        setSending(false)
+                        return "Ocurrió un error inesperado"
+                    },
+                }
+            }
+        )
     };
 
     const inputCls = "md:rounded-t dark:bg-dark-input bg-light-input block w-full p-1"
@@ -24,7 +42,7 @@ export default function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit(data => onSubmit(data))} className="flex flex-col">
-
+            <ToastContainer />
             <div className="form-group">
                 <label htmlFor="name" className={labelCls}>
                     Nombre - Empresa

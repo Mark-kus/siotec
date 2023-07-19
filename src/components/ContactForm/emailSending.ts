@@ -9,14 +9,14 @@ interface emailSendingProps {
     message: String
 }
 
-export default async function emailSending({ name, phone, email, message }: emailSendingProps) {
-    // return await emailjs.send(PUBLIC_EMAIL_SERVICE, PUBLIC_EMAIL_TEMPLATE,
-    //     {
-    //         name,
-    //         phone,
-    //         email,
-    //         message
-    //     },
-    //     PUBLIC_EMAIL_KEY
-    // )
+export default function emailSending({ name, phone, email, message }: emailSendingProps) {
+    return emailjs.send(PUBLIC_EMAIL_SERVICE, PUBLIC_EMAIL_TEMPLATE,
+        {
+            name,
+            phone,
+            email,
+            message
+        },
+        PUBLIC_EMAIL_KEY
+    )
 }
