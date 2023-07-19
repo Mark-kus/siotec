@@ -25,14 +25,12 @@ export default function ContactForm() {
                         setSending(false)
                         return `Gracias! Ya enviamos tu mail`
                     },
-                    icon: "🟢",
                 },
                 error: {
                     render() {
                         setSending(false)
                         return "Ocurrió un error inesperado"
-                    }, 
-                    icon: "🔴"
+                    },
                 }
             }
         )
