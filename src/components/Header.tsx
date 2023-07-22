@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
       <div className="flex justify-between items-center px-4 py-2">
 
-        <a href="/" className="w-1/2 min-w-[150px] max-w-[200px]"><img src={title} alt="website name" /></a>
+        <a rel="prefetch" href="/" className="w-1/2 min-w-[150px] max-w-[200px]"><img src={title} alt="website name" /></a>
 
         <button
           className="h-5 w-5 mr-4 md:hidden"
