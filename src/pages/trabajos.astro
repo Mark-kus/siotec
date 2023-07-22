@@ -5,29 +5,36 @@ import trabajos from "../seeds/trabajos";
 ---
 
 <Layout title="SIOTEC - Trabajos">
-    <section class="flex flex-col">
-        <h1 class="text-center text-xl md:text-3xl m-4 mt-10">Estos son los servicios que se encuentran activos en SIOTEC:</h1>
-        {
-            trabajos.map((trabajo, i) => {
-                return (
-                    <article
-                        class={`${i % 2 === 1 ? "self-end md:pr-10 text-right" : "md:pl-10"} p-4 md:mt-8 shadow-lg max-w-5xl`}
-                    >
-                        <h1>{trabajo.title}</h1>
-                        <p>{trabajo.description}</p>
-                        <ul class="images-container">
-                            {trabajo.images.map((image) => (
-                                <li>
-                                    <img
-                                        src={image}
-                                        alt={`Ejemplo de trabajo de ${trabajo.title}`}
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                    </article>
-                );
-            })
-        }
-    </section>
+  <section class="flex flex-col">
+    <h2 class="text-center text-xl md:text-2xl m-4 mt-10">
+      Grupo SIOTEC brinda servicios integrales con profesionalismo y compromiso,
+      garantizando la calidad de los mismos. Acompañando en cada paso del
+      proceso en el desarrollo de las actividades para el crecimiento de su
+      negocio.
+    </h2>
+    {
+      trabajos.map((trabajo, i) => {
+        return (
+          <article
+            class={`${
+              i % 2 === 1 ? "self-end md:pr-10 text-right" : "md:pl-10"
+            } p-4 md:mt-8 shadow-lg max-w-5xl`}
+          >
+            <h1>{trabajo.title}</h1>
+            <p>{trabajo.description}</p>
+            <ul class="images-container">
+              {trabajo.images.map((image) => (
+                <li>
+                  <img
+                    src={image}
+                    alt={`Ejemplo de trabajo de ${trabajo.title}`}
+                  />
+                </li>
+              ))}
+            </ul>
+          </article>
+        );
+      })
+    }
+  </section>
 </Layout>
