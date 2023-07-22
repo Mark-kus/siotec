@@ -13,13 +13,13 @@ const Navbar: React.FC = () => {
 
                 <ul className="dropdown-content md:columns-2 gap-0 hidden absolute -right-5 md:-right-24 z-10 shadow-lg bg-light-header-background border border-light-header-border dark:bg-dark-header-background dark:border-dark-header-border">
                     {servicios.map(servicio => {
-                        return <li key={servicio.id}><a href={`/servicios/${servicio.id}`} className={dropdownContentCls}>{servicio.title}</a></li>
+                        return <li key={servicio.id}><a rel="prefetch-intent" href={`/servicios/${servicio.id}`} className={dropdownContentCls}>{servicio.title}</a></li>
                     })}
                 </ul>
 
             </ul>
-            <a href="/trabajos" className="p-4 md:px-4">Trabajos</a>
-            <a href="/contacto" className="p-4 md:px-4">Contacto</a>
+            <a rel="prefetch-intent" href="/trabajos" className="p-4 md:px-4">Trabajos</a>
+            <a rel="prefetch" href="/contacto" className="p-4 md:px-4">Contacto</a>
         </nav>
     )
 }
