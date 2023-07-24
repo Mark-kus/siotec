@@ -10,7 +10,7 @@ module.exports = {
 				},
 			},
 			animation: {
-				wiggle: "wiggle 1s ease-in infinite"
+				wiggle: "wiggle 0.3s ease-in infinite"
 			},
 			fontFamily: {
 				"sans": ['Roboto', 'sans-serif'],
