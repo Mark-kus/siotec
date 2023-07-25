@@ -35,11 +35,11 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
                                 <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
                                 <p className="text-gray-600 mb-4">{item.description}</p>
                                 {/* <p className="text-blue-600 font-semibold">{item.contact}</p> */}
-                                <p className='flex'>
+                                <p className='flex flex-wrap'>
                                     {item.tags.map((tag, i) => (
                                         <span
                                             key={i}
-                                            className='text-white bg-light-page-background rounded-full mr-4 px-2
+                                            className='text-white bg-light-page-background rounded-full mb-2 mr-4 px-2
                                              py-1 shadow shadow-black hover:scale-110 transition-transform'
                                         >
                                             {tag}</span>
@@ -52,13 +52,13 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
             </div>
             <button
                 onClick={handlePrevSlide}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-2"
+                className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-2"
             >
                 &lt;
             </button>
             <button
                 onClick={handleNextSlide}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-2"
+                className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-2"
             >
                 &gt;
             </button>
