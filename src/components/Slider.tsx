@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import type { Integrantes } from '../seeds/integrantes';
 
-const Slider = ({ data }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+interface SliderProps {
+    data: Integrantes[];
+}
+
+const Slider: React.FC<SliderProps> = ({ data }) => {
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     const handlePrevSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : data.length - 1));
@@ -25,11 +30,21 @@ const Slider = ({ data }) => {
                 {data.map((item, index) => (
                     <div key={index} className="w-1/3 p-4">
                         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                            <img src={item.image} alt={item.name} className="w-full h-64 object-cover" />
+                            {/* <img src={item.image} alt={item.name} className="w-full h-64 object-cover" /> */}
                             <div className="p-4">
                                 <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
                                 <p className="text-gray-600 mb-4">{item.description}</p>
-                                <p className="text-blue-600 font-semibold">{item.contact}</p>
+                                {/* <p className="text-blue-600 font-semibold">{item.contact}</p> */}
+                                <p className='flex'>
+                                    {item.tags.map((tag, i) => (
+                                        <span
+                                            key={i}
+                                            className='text-white bg-light-page-background rounded-full mr-4 px-2
+                                             py-1 shadow shadow-black hover:scale-110 transition-transform'
+                                        >
+                                            {tag}</span>
+                                    ))}
+                                </p>
                             </div>
                         </div>
                     </div>
