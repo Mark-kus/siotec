@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import type { Integrantes } from '../seeds/integrantes';
+import type { Integrante } from '../seeds/integrantes';
+import Card from './Card';
 
 interface SliderProps {
-    data: Integrantes[];
+    data: Integrante[];
 }
 
 const Slider: React.FC<SliderProps> = ({ data }) => {
@@ -29,24 +30,7 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
             >
                 {data.map((item, index) => (
                     <div key={index} className="w-1/3 p-4">
-                        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                            {/* <img src={item.image} alt={item.name} className="w-full h-64 object-cover" /> */}
-                            <div className="p-4">
-                                <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
-                                <p className="text-gray-600 mb-4">{item.description}</p>
-                                {/* <p className="text-blue-600 font-semibold">{item.contact}</p> */}
-                                <p className='flex flex-wrap'>
-                                    {item.tags.map((tag, i) => (
-                                        <span
-                                            key={i}
-                                            className='text-white bg-light-page-background rounded-full mb-2 mr-4 px-2
-                                             py-1 shadow shadow-black hover:scale-105 transition-transform text-center'
-                                        >
-                                            {tag}</span>
-                                    ))}
-                                </p>
-                            </div>
-                        </div>
+                        <Card data={item} />
                     </div>
                 ))}
             </div>
