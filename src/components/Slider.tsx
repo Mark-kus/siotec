@@ -40,7 +40,7 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
                                         <span
                                             key={i}
                                             className='text-white bg-light-page-background rounded-full mb-2 mr-4 px-2
-                                             py-1 shadow shadow-black hover:scale-110 transition-transform'
+                                             py-1 shadow shadow-black hover:scale-110 transition-transform text-center'
                                         >
                                             {tag}</span>
                                     ))}
