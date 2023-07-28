@@ -24,6 +24,12 @@ const socialMedia: SocialMedia[] = [
         url: "https://api.whatsapp.com/send/?phone=%2B5491132057207",
         icon: "fa-brands fa-whatsapp fa-2xl"
     },
+    {
+        id: 4,
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/grupo-siotec-162a58284/",
+        icon: "fa-brands fa-linkedin fa-2xl"
+    },
 ]
 
 export default socialMedia
