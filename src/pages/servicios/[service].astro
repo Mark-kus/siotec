@@ -25,7 +25,7 @@ import servicios from "../../seeds/servicios";
 const servicio = servicios.find(servicio => Number(servicio.id) == Number(service))
 ---
 
-<Layout title="SIOTEC - Servicios">
+<Layout title="Grupo SIOTEC - Servicios">
     <article class="bg-light-page-background shadow pl-10 p-4 w-fit max-w-4xl">
         <h1>{servicio.title}</h1>
         <ul class="list-disc list-inside">{servicio.items.map(item => {
