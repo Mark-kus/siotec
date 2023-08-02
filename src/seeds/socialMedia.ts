@@ -1,9 +1,4 @@
-interface SocialMedia {
-    id: number
-    name: string
-    url: string
-    icon: string
-}
+import type { SocialMedia } from "../interfaces/socialMedia.interface"
 
 const socialMedia: SocialMedia[] = [
     {

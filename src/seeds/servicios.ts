@@ -1,9 +1,4 @@
-interface Trabajo {
-  id: number;
-  title: string;
-  items: string[];
-  images: string[];
-}
+import type { Trabajo } from "../interfaces/trabajo.interface";
 
 const trabajos: Trabajo[] = [
   {
