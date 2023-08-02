@@ -6,11 +6,12 @@ import mail from "/mail.svg";
 
 <Layout title="SIOTEC - Contacto">
     <div class="flex justify-center items-center overflow-hidden">
+        
         <div class="w-full m-auto md:w-1/2">
             <h1 class="text-5xl my-5">Contactanos</h1>
             <ContactForm client:load />
         </div>
 
-        <img class="hidden md:block min-w-[350px] w-1/3 relative -right-10 top-5" src={mail} alt="" />
+        <img class="hidden md:block min-w-[350px] w-1/3 relative -right-10 top-5" src={mail} aria-hidden="true" />
     </div>
 </Layout>

@@ -3,7 +3,16 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
-			fontFamily : {
+			keyframes: {
+				wiggle: {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' },
+				},
+			},
+			animation: {
+				wiggle: "wiggle 0.3s ease-in infinite"
+			},
+			fontFamily: {
 				"sans": ['Roboto', 'sans-serif'],
 			},
 			colors: {
