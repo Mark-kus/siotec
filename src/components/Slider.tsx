@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { Integrante } from '../seeds/integrantes';
+import type { Integrante } from '../interfaces/integrante.interface';
 import Card from './Card';
 
 interface SliderProps {
@@ -29,7 +29,7 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
                 }}
             >
                 {data.map((item, index) => (
-                    <div key={index} className="w-1/3 p-4">
+                    <div key={index} className="w-1/3 h-fit p-4 m-auto">
                         <Card data={item} />
                     </div>
                 ))}
