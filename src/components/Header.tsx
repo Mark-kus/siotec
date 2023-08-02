@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         className={`absolute right-0 top-0 z-10 flex w-7/12
 										flex-col overflow-y-hidden duration-150 bg-light-header-background
                     dark:bg-dark-header-background
-										ease-linear	${showMenu ? 'translate-x-0 h-screen opacity-100' : 'translate-x-full h-0 w-0 opacity-0'}
+										ease-linear	${showMenu ? 'translate-x-0 h-full opacity-100' : 'translate-x-full h-0 w-0 opacity-0'}
                     md:h-auto md:relative md:overflow-visible md:w-auto md:hidden`}>
         <div className={showMenu ? "block" : "hidden"}>
           <button
