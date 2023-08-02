@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
                 </ul>
 
             </ul>
-            <a rel="prefetch-intent" href="/trabajos" className="p-4 md:px-4">Trabajos</a>
+            <a rel="prefetch-intent" href="/nosotros" className="p-4 md:px-4">Nosotros</a>
             <a rel="prefetch" href="/contacto" className="p-4 md:px-4">Contacto</a>
         </nav>
     )

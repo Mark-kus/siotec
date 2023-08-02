@@ -1,9 +1,4 @@
-interface SocialMedia {
-    id: number
-    name: string
-    url: string
-    icon: string
-}
+import type { SocialMedia } from "../interfaces/socialMedia.interface"
 
 const socialMedia: SocialMedia[] = [
     {
@@ -23,6 +18,12 @@ const socialMedia: SocialMedia[] = [
         name: "Whatsapp",
         url: "https://api.whatsapp.com/send/?phone=%2B5491132057207",
         icon: "fa-brands fa-whatsapp fa-2xl"
+    },
+    {
+        id: 4,
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/grupo-siotec-162a58284/",
+        icon: "fa-brands fa-linkedin fa-2xl"
     },
 ]
 
