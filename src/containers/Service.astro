@@ -8,8 +8,8 @@ export interface Props {
 const { data } = Astro.props;
 ---
 
-<article class="text-center">
+<div class="text-center">
   <i class={data.icon}></i>
   <h2>{data.title}</h2>
   <p>{data.description}</p>
-</article>
+</div>

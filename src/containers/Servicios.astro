@@ -1,0 +1,8 @@
+---
+import servicios from "../seeds/servicios";
+import Service from "./Service.astro";
+---
+
+<section class="grid grid-cols-3 gap-24 p-24 bg-sky-950">
+  {servicios.map((item) => <Service data={item} />)}
+</section>
