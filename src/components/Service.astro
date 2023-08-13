@@ -1,0 +1,15 @@
+---
+import type { Servicio } from '../interfaces/servicio.interface';
+
+export interface Props {
+    data: Servicio
+}
+
+const {data} = Astro.props
+---
+
+<article class="text-center">
+  <i class={data.icon}></i>
+  <h2>{data.title}</h2>
+  <p>{data.description}</p>
+</article>
