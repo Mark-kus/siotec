@@ -3,6 +3,9 @@ import servicios from "../seeds/servicios";
 import Service from "./Service.astro";
 ---
 
-<section class="grid grid-cols-3 gap-24 p-24 bg-sky-950">
-  {servicios.map((item) => <Service data={item} />)}
+<section class="px-24 py-12 bg-sky-950">
+  <h1 class="text-center text-4xl mb-10">¿Que hacemos?</h1>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24">
+    {servicios.map((item) => <Service data={item} />)}
+  </div>
 </section>

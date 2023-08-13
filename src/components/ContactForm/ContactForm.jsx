@@ -37,8 +37,8 @@ export default function ContactForm() {
     };
 
     const inputCls = "md:rounded-t dark:bg-dark-input bg-light-input block w-full p-1"
-    const errorCls = "md:rounded-b dark:bg-dark-error bg-light-error text-white transition-all opacity-0"
-    const labelCls = "mt-2"
+    const errorCls = "md:rounded-b dark:bg-dark-error bg-light-error text-white text-xs transition-all opacity-0 mb-2"
+    const labelCls = ""
 
     return (
         <form onSubmit={handleSubmit(data => onSubmit(data))} className="flex flex-col">

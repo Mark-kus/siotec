@@ -4,8 +4,9 @@ import Slider from "../components/Slider";
 import data from "../seeds/integrantes";
 ---
 
-<section class="flex justify-center items-center">
-  <div class="md:w-4/5 w-full my-10">
+<section class="flex flex-col justify-center items-center my-10">
+  <h1 class="text-4xl mb-5">¿Quienes somos?</h1>
+  <div class="md:w-4/5 w-full">
     <Slider client:load data={data} />
   </div>
 </section>
