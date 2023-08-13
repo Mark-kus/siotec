@@ -1,0 +1,11 @@
+---
+import Slider from "../components/Slider";
+
+import data from "../seeds/integrantes";
+---
+
+<div class="flex justify-center items-center">
+  <div class="md:w-2/3 w-full mt-10">
+    <Slider client:load data={data} />
+  </div>
+</div>

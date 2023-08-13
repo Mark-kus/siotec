@@ -1,6 +1,6 @@
 ---
-export interface Props {
-    mediaId: String;
+interface Props {
+  mediaId: String;
 }
 
 const { mediaId } = Astro.props;
@@ -10,5 +10,5 @@ const media = socialMedia.find((media) => Number(media.id) == Number(mediaId));
 ---
 
 <a href={media.url} target="_blank">
-    <i class={`${media.icon} mx-2 md:mx-4 w-8 md:w-12 hover:animate-wiggle`}></i>
+  <i class={`${media.icon} mx-2 md:mx-4 w-8 md:w-12 hover:animate-wiggle`}></i>
 </a>
