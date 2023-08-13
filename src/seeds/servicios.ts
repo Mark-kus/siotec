@@ -3,33 +3,43 @@ import type { Servicio } from "../interfaces/servicio.interface";
 const servicios: Servicio[] = [
   {
     title: "ELECTROMECÁNICA",
-    description: "Ofrecemos servicios de reparacion de automoviles y muchas cosas, como lorem ipsum e ipsum lorem",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-gear"
+  },
+  {
+    title: "ALIMENTOS",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-vial"
+  },
+  {
+    title: "MANTENIMIENTO INDUSTRIAL",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
     icon: "fa-solid fa-wrench"
   },
   {
-    title: "ELECTROMECÁNICA",
-    description: "Ofrecemos servicios de reparacion de automoviles y muchas cosas, como lorem ipsum e ipsum lorem",
-    icon: "fa-solid fa-wrench"
+    title: "DESARROLLO WEB",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-laptop"
   },
   {
-    title: "ELECTROMECÁNICA",
-    description: "Ofrecemos servicios de reparacion de automoviles y muchas cosas, como lorem ipsum e ipsum lorem",
-    icon: "fa-solid fa-wrench"
+    title: "ELECTRICIDAD",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-bolt"
   },
   {
-    title: "ELECTROMECÁNICA",
-    description: "Ofrecemos servicios de reparacion de automoviles y muchas cosas, como lorem ipsum e ipsum lorem",
-    icon: "fa-solid fa-wrench"
+    title: "ELECTRÓNICA",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-pager"
   },
   {
-    title: "ELECTROMECÁNICA",
-    description: "Ofrecemos servicios de reparacion de automoviles y muchas cosas, como lorem ipsum e ipsum lorem",
-    icon: "fa-solid fa-wrench"
+    title: "REFRIGERACIÓN",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-snowflake"
   },
   {
-    title: "ELECTROMECÁNICA",
-    description: "Ofrecemos servicios de reparacion de automoviles y muchas cosas, como lorem ipsum e ipsum lorem",
-    icon: "fa-solid fa-wrench"
+    title: "GENERADORES",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, accusantium non odio ducimus sed dolores nam error obcaecati fuga quis.",
+    icon: "fa-solid fa-plug"
   },
 ];
 
