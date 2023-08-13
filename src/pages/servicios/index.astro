@@ -10,6 +10,7 @@ import servicios from "../../seeds/servicios";
       servicios.map((item) => {
         return (
           <div class="ml-4 mt-2">
+            <i class={item.icon}></i>
             {item.title}
             <p>{item.description}</p>
           </div>
