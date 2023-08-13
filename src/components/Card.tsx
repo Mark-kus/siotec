@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Integrante } from "../seeds/integrantes"
+import type { Integrante } from "../interfaces/integrante.interface"
 
 interface CardProps {
     data: Integrante
@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
                         </span>
                     ))}
                 </p>
-                
+
             </div>
 
         </div>
