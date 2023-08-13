@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import servicios from "../../seeds/servicios";
+---
+
+<Layout title="Grupo SIOTEC - Servicios">
+  <section class="bg-light-page-background shadow pl-10 p-4 w-fit max-w-4xl">
+    {
+      servicios.map((item) => {
+        return (
+          <div class="ml-4 mt-2">
+            {item.title}
+            <p>{item.description}</p>
+          </div>
+        );
+      })
+    }
+  </section>
+</Layout>
