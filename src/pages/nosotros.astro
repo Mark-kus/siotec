@@ -5,10 +5,13 @@ import Slider from "../components/Slider";
 import data from "../seeds/integrantes";
 ---
 
-<Layout title="SIOTEC - nosotros">
-  <div class="flex justify-center items-center">
-    <div class="md:w-2/3 w-full mt-10">
-      <Slider client:load data={data} />
+<Layout title="Grupo SIOTEC - nosotros">
+  <section class="px-4 md:px-24 py-12">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-center text-4xl">¿Quienes somos?</h1>
+      <div class="md:w-2/3 w-full mt-10">
+        <Slider client:load data={data} />
+      </div>
     </div>
-  </div>
+  </section>
 </Layout>
