@@ -2,7 +2,6 @@ import type { Integrante } from "../interfaces/integrante.interface";
 
 const data: Integrante[] = [
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Alejandro Aponte',
         description: `Brindo soporte técnico y comercial a las industrias en general. Cuento con
         experiencia en servicios de mantenimientos preventivos y correctivos en
@@ -13,7 +12,6 @@ const data: Integrante[] = [
         tags: ["Técnico Universitario en Mantenimiento Industrial – UTN FRD", "Departamento Técnico - Rulemanes Oscar"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Alex Gómez',
         description: `Técnico Electromecánico y estudiante de Ingeniería Civil en la UTN FRRO.
         Cuento con experiencia en construcciones en seco con perfiles de acero
@@ -22,7 +20,6 @@ const data: Integrante[] = [
         tags: ["Técnico en Electromecánica – EESTN°1 BBME. MITRE", "Estudiante de Ingeniería Civil – UTN FRR.", "Logística – Crear Soluciones"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Bruno Di Santo',
         description: `Brindé apoyo y soporte constante técnico electrónico en
         radiocomunicaciones con sus labores diarias. Además fui responsable del
@@ -38,7 +35,6 @@ const data: Integrante[] = [
         tags: ["Estudiante de Tecnicatura en Electrónica – Radio Instituto", "Electrónica y Electricidad – Cuenta Propia", "Comunicaciones – Oscar Martinelli"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Gonzalo Saulino',
         description: `Mientras me encontraba cursando la Tecnicatura en Electromecánica, realice
         trabajos de Electricidad Domiciliaria en SL Multiser y luego en el Sector de
@@ -51,7 +47,6 @@ const data: Integrante[] = [
         tags: ["Técnico en Electromecánica – EESTN°1 SADA", "Técnico Universitario en Mantenimiento Industrial – UTN FRD", "Postítulo en Formación Docente para Nivel Secundario – Vocación Docente", "Estudiante de Ingeniería Industrial – UNLu", "Electricista Domiciliario – SL Multiser", "Sector de Repuestos – Ratto Hnos", "Docente de Electromecánica – EESTN°1 SADA"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Julián Bannon',
         description: `Me desarrolle como Analista Administrativo, realizando diversas tareas de
         índole administrativo y contable: Facturación, cobros, pagos a proveedores y
@@ -67,7 +62,6 @@ const data: Integrante[] = [
         tags: ["Contador Público – UNLu", "Estudiante del Posgrado en Digital Accounting – UCEMA", "Analista Administrativo – Grupo Vocaturo SRL", "Senior de Auditoría Externa – Ernst & Young (EY)"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Laureano López',
         description: `A la vez que me encontraba realizando la carrera de Técnico en
         Electromecánica, preste servicios por cuenta propia de Electricidad
@@ -81,7 +75,6 @@ const data: Integrante[] = [
         tags: ["Técnico en Electromecánica – EESTN°1 SADA", "Electricista Domiciliario – Cuenta Propia", "Operador de Generadores Diesel – Juan F. Secco"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Lucas Muñoz',
         description: `Al recibirme de Técnico en Tecnología de los Alimentos, me desarrolle como
         Docente en diferentes materias dentro de la incumbencia de mi título a la vez
@@ -99,7 +92,6 @@ const data: Integrante[] = [
         tags: ["Técnico en Tecnología de los Alimentos – EESTN°1 SADA", "Trayecto de Formación Pedagógica – ISMA", "Docente de Tecnología de los Alimentos – EESTN°1 SADA", "Encargado en Laboratorio de Control de Calidad Alimentario y de Aguas – EESTN°1 SADA", "Encargado en Laboratorio de Análisis Bioquímico Agrícola – EESAN°1 Martín Fierro", "Capacitador en Cursos No Formales – EESAN°1 Martín Fierro"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Luis López',
         description: `Me recibí de Técnico Electromecánico y empecé a ejercer como Mecánico en
         Agromecánica Mazziniani realizando reparación y mantenimiento de
@@ -115,7 +107,6 @@ const data: Integrante[] = [
         tags: ["Técnico en Electromecánica – EESTN°1 SADA", "Mecánico – Agromecánica Mazziniani", "Docente de Electromecánica – EESTN°1 SADA", "Mantenimiento Industrial – Hielo Cristal SA", "Técnico Operador – Power Box", "Mantenimiento Eléctrico y Mecánico de Generadores Eléctricos – Cuenta Propia", "Maquinista Operador – Americold Logistic"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Mateo Saulino',
         description: `Con la carrera de Técnico en Electromecánica en curso, realicé actividades de
         Mantenimiento Industrial en Lasfor Alimentos. Luego de egresarme, me
@@ -125,14 +116,12 @@ const data: Integrante[] = [
         tags: ["Técnico en Electromecánica – EESTN°1 SADA", "Electricista Domiciliario – SL Multiser", "Mantenimiento Industrial – Lasfor", "Mantenimiento Industrial – Grupo Agroindustrial Del Sur"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Maximiliano Miorglio',
         description: `Al presente me encuentro cursando el tercer año de la carrera de Abogacía
         en la Universidad de Buenos Aires. `,
         tags: ["Estudiante de Abogacía – UBA"]
     },
     {
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
         name: 'Marco Tignanelli',
         description: `Recibido de Técnico en Electromecánica, decidí formarme como
         Desarrollador Web Full Stack en SoyHenry Bootcamp, en donde al haber
@@ -142,6 +131,16 @@ const data: Integrante[] = [
         implementaciones de diversas APIs para su página oficial, utilizando React
         en la implementación de Maps, Github y Spotify.`,
         tags: ["Técnico en Electromecánica – EESTN°1 SADA", "Pasante como Desarrollador Front End – PPOL", "Desarrollador Web Full Stack – SoyHenry", "Asistente de Enseñanza – SoyHenry", "Desarrollador Web Full Stack – Hueney Ruca", "Desarrollador Web Front End – Ppol"]
+    },
+    {
+        name: 'Gonzalo Perone',
+        description: `Me recibí de Técnico en Electromecánica y al siguiente año mientras me 
+        desarrollaba como Administrativo Municipal dentro de la Secretaría de 
+        Turismo y Cultura, comencé mis estudios terciarios en el Instituto Superior de 
+        Formación Técnica N° 143, donde luego me recibí de Técnico Superior en 
+        Seguridad e Higiene. Actualmente me encuentro desempeñándome por
+        cuenta propia como matriculado en el Área de Seguridad e Higiene.`,
+        tags: ["Técnico en Electromecánica – EESTN°1 SADA", "Técnico Superior en Seguridad e Higiene – ISFT N°143", "Administrativo Municipal – Secretaría de Turismo y Cultura", "Técnico Matriculado – Colegio de Técnicos de la Pca. De BS.AS"]
     },
 ];
 
