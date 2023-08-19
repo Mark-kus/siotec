@@ -8,8 +8,7 @@ const Header: React.FC = () => {
   const hamburgerCls = "my-1 block h-0.5 rounded-sm bg-white"
 
   return (
-    <header className="md:flex md:justify-between bg-light-header-background dark:bg-dark-header-background text-light-header-text
-     shadow">
+    <header className="md:flex md:justify-between fixed w-full z-10 bg-light-header-background dark:bg-dark-header-background text-light-header-text shadow">
 
       <div className="flex justify-between items-center px-4 py-2">
 
