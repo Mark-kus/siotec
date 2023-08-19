@@ -1,0 +1,21 @@
+---
+import socialMedia from "../seeds/socialMedia";
+---
+
+<footer
+  class="flex items-center justify-between py-2 border-t-light-footer-border dark:border-t-dark-footer-border border-t bg-light-footer-background dark:bg-dark-footer-background text-light-footer-text dark:text-dark-footer-text"
+>
+  <h1 class="ml-4">Copyright © 2023 SIOTEC</h1>
+
+  <ul class="flex items-center">
+    {
+      socialMedia.map((media) => (
+        <a href={media.url} target="_blank">
+          <i
+            class={`${media.icon} mx-2 md:mx-4 w-8 md:w-12 hover:animate-wiggle`}
+          />
+        </a>
+      ))
+    }
+  </ul>
+</footer>
