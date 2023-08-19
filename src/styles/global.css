@@ -4,18 +4,18 @@ html {
 
 ::-webkit-scrollbar {
     width: 12px;
-    background-color: #E8AA42;
+    background-color: #ffc561;
 }
 
 
 ::-webkit-scrollbar-thumb {
-    background-color: #025464;
+    background-color: #0088a3;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #025464;
+    background-color: #00748b;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #fff;
+    background-color: #004350;
 }
