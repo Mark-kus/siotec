@@ -7,7 +7,7 @@ interface Props {
 const { title } = Astro.props;
 
 import Footer from "../containers/Footer.astro";
-import Header from "../containers/Header.astro";
+import Header from "../components/Header";
 ---
 
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ import Header from "../containers/Header.astro";
   <body
     class="flex flex-col justify-between absolute inset-0 bg-light-page-background dark:bg-dark-page-background text-light-page-text dark:text-dark-page-text"
   >
-    <Header />
+    <Header client:load />
     <slot />
     <Footer />
   </body>
