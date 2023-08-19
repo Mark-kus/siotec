@@ -1,0 +1,12 @@
+---
+import Slider from "../components/Slider";
+
+import data from "../seeds/integrantes";
+---
+
+<section id="nosotros" class="flex flex-col justify-center items-center py-20 my-10 bg-sky-950 border-y border-light-page-text">
+  <h1 class="text-4xl mb-5">¿Quienes somos?</h1>
+  <div class="md:w-4/5 w-full">
+    <Slider client:load data={data} />
+  </div>
+</section>

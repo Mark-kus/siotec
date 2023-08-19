@@ -1,0 +1,35 @@
+---
+import siotec from "../seeds/siotec";
+
+const clsTitle = "text-xl my-2";
+const clsContainers = "border border-light-page-text";
+---
+
+<section
+  class="bg-sky-950 border-y border-light-page-text flex flex-col items-center text-center px-2 md:px-10 py-20 my-10"
+>
+  <div class="flex">
+    <div class={`${clsContainers} mr-1 w-3/6 p-2`}>
+      <h1 class={`${clsTitle}`}>¿Cuál es nuestra misión?</h1>
+      <p>{siotec.mission}</p>
+    </div>
+
+    <div class={`${clsContainers} ml-1 w-3/6 p-2`}>
+      <h1 class={`${clsTitle}`}>¿Cuál es nuestra visión?</h1>
+      <p>{siotec.vision}</p>
+    </div>
+  </div>
+
+  <div class={`${clsContainers} mt-2 w-full`}>
+    <h1 class={`${clsTitle}`}>¿Cuales son nuestros valores?</h1>
+    <p>
+      {
+        siotec.values.map((value, i) => (
+          <>
+            <span class="m-4">{value}</span>
+          </>
+        ))
+      }
+    </p>
+  </div>
+</section>

@@ -1,13 +1,16 @@
 import type React from "react"
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+    setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ setShowMenu }) => {
 
     return (
-        <nav className="flex flex-col md:flex-row items-center justify-center text-xl md:text-lg">
-
-            <a rel="prefetch-intent" href="/servicios" className="p-4 md:px-4">Servicios</a>
-            <a rel="prefetch-intent" href="/nosotros" className="p-4 md:px-4">Nosotros</a>
-            <a rel="prefetch" href="/contacto" className="p-4 md:px-4">Contacto</a>
+        <nav className="flex flex-col h-full justify-center items-center md:flex-row text-3xl md:text-xl">
+            <a onClick={() => setShowMenu(false)} href="#servicios" className="p-4 my-5 md:my-0 md:px-4">Servicios</a>
+            <a onClick={() => setShowMenu(false)} href="#nosotros" className="p-4 my-5 md:my-0 md:px-4">Nosotros</a>
+            <a onClick={() => setShowMenu(false)} href="#contacto" className="p-4 my-5 md:my-0 md:px-4">Contacto</a>
         </nav>
     )
 }
