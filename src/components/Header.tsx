@@ -10,9 +10,9 @@ const Header: React.FC = () => {
   return (
     <header className="md:flex md:justify-between fixed w-full z-10 bg-light-header-background dark:bg-dark-header-background text-light-header-text shadow">
 
-      <div className="flex justify-between items-center px-4 py-2">
+      <div className="flex justify-between items-center px-4">
 
-        <a rel="prefetch" href="#" className="w-1/2 min-w-[150px] max-w-[200px]"><img src={title} alt="website name" /></a>
+        <a rel="prefetch" href="#" className="w-1/2 h-12 md:h-auto min-w-[150px] max-w-[200px]"><img className="h-12 md:h-auto" src={title} alt="website name" /></a>
 
         <button
           className="h-5 w-5 mr-4 md:hidden"
