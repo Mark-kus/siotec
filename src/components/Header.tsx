@@ -3,9 +3,9 @@ import Navbar from "./Navbar"
 import title from '/siotec.svg'
 
 const Header: React.FC = () => {
-  const [showMenu, setShowMenu] = useState<boolean>(true)
+  const [showMenu, setShowMenu] = useState<boolean>(false)
 
-  const hamburgerCls = "my-1 block h-0.5 rounded-sm bg-white transition-all duration-500"
+  const hamburgerCls = "my-1 block h-0.5 rounded-sm bg-white transition-all duration-400"
 
   return (
     <header className="md:flex md:justify-between fixed w-full z-10 bg-light-header-background dark:bg-dark-header-background text-light-header-text shadow">
@@ -25,20 +25,20 @@ const Header: React.FC = () => {
       </div>
 
       <aside
-        className={`right-0 top-0 z-10 flex w-7/12
+        className={`right-0 top-0 z-10 flex
 										flex-col overflow-y-hidden duration-150 bg-light-header-background
-                    dark:bg-dark-header-background
-										ease-linear	${showMenu ? 'translate-x-0 h-screen w-full opacity-100' : 'translate-x-full h-0 w-0 opacity-0'}
+                    dark:bg-dark-header-background w-full
+										ease-linear	${showMenu ? 'h-screen opacity-100' : 'h-0 opacity-0'}
                     md:h-auto md:relative md:overflow-visible md:w-auto md:hidden`}>
 
-        <div className={showMenu ? "block" : "hidden"}>
-          <Navbar />
+        <div className={showMenu ? "h-1/2 block" : "hidden"}>
+          <Navbar setShowMenu={setShowMenu} />
         </div>
 
       </aside>
 
-      <div className="hidden md:block">
-        <Navbar />
+      <div className="h-1/2 hidden md:block">
+        <Navbar setShowMenu={setShowMenu} />
       </div>
     </header>
   )
