@@ -5,7 +5,7 @@ const servicios: Servicio[] = [
     title: "ELECTROMECÁNICA",
     description: `Realización de proyecto y diseño de instalaciones eléctricas domiciliaras, comerciales e industriales 
     en obras nuevas, reformas y ampliaciones. Elaboración de Informes Electromecánicos para la 
-    habilitación de comercios y certificaciones eléctricas con instrumentos de precisión.`,
+    habilitación de comercios y medición de puesta a tierra con telurímetro certificado por FIUBA.`,
     icon: "fa-solid fa-gear"
   },
   {
