@@ -10,4 +10,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo de mensaje
-        run: echo "Hello there!"
+        run: |
+           echo "Hello there!"
