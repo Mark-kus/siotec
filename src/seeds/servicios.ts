@@ -5,7 +5,7 @@ const servicios: Servicio[] = [
     title: "ELECTROMECÁNICA",
     description: `Realización de proyecto y diseño de instalaciones eléctricas domiciliaras, comerciales e industriales 
     en obras nuevas, reformas y ampliaciones. Elaboración de Informes Electromecánicos para la 
-    habilitación de comercios y medición de puesta a tierra con telurímetro certificado por FIUBA.`,
+    habilitación de comercios y medición de puesta a tierra con telurímetro certificado por FIUBA. Elaboración de planos para instalaciones eléctricas de obras nuevas, ampliaciones y/o reformas.`,
     icon: "fa-solid fa-gear"
   },
   {
@@ -17,8 +17,8 @@ const servicios: Servicio[] = [
   },
   {
     title: "DESARROLLO WEB",
-    description: `Realizamos desarrollo de páginas web a medida y personalizadas; desarrollo del Frontend, del 
-    Backend y desarrollo de APIs. Además brindamos mantenimiento y actualizaciones.`,
+    description: `Realizamos desarrollo de páginas web a medida y personalizadas; desarrollo de Frontend, 
+    Backend y APIs. Además brindamos mantenimiento y actualizaciones.`,
     icon: "fa-solid fa-laptop"
   },
   {
