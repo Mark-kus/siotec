@@ -1,7 +1,32 @@
 {
-  "name": "siotec",
+  "name": "grupo-siotec",
+  "description": "Página web de la sociedad 'GRUPO SIOTEC'",
+  "keywords": [
+    "web",
+    "society",
+    "argentina"
+  ],
+  "author": {
+    "name": "Mark-kus",
+    "email": "tignanellimarco@gmail.com",
+    "url": "https://mark-kus.vercel.app"
+  },
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mark-kus/siotec"
+  },
+  "bugs": {
+    "url": "https://github.com/Mark-kus/siotec/issues"
+  },
   "type": "module",
-  "version": "1.0.1",
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.7.1"
+  },
+  "homepage": "https://www.gruposiotec.com",
+  "version": "1.1.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
