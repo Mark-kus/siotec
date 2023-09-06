@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Navbar from "./Navbar"
-import title from '/siotec.svg'
+import title from '/siotec.svg?url'
 
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false)
@@ -12,7 +12,9 @@ const Header: React.FC = () => {
 
       <div className="flex justify-between items-center px-4">
 
-        <a rel="prefetch" href="#" className="w-1/2 h-12 md:h-auto min-w-[150px] max-w-[200px]"><img className="h-12 md:h-auto" src={title} alt="website name" /></a>
+        <a rel="prefetch" href="#" className="w-1/2 h-12 md:h-auto min-w-[150px] max-w-[200px]">
+          <img className="h-12 md:h-auto" src={title} alt={'website name'}/>
+        </a>
 
         <button
           className="h-5 w-5 mr-4 md:hidden"
