@@ -1,7 +1,32 @@
 {
-  "name": "",
+  "name": "grupo-siotec",
+  "description": "Página web de la sociedad 'GRUPO SIOTEC'",
+  "keywords": [
+    "web",
+    "society",
+    "argentina"
+  ],
+  "author": {
+    "name": "Mark-kus",
+    "email": "tignanellimarco@gmail.com",
+    "url": "https://mark-kus.vercel.app"
+  },
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mark-kus/siotec"
+  },
+  "bugs": {
+    "url": "https://github.com/Mark-kus/siotec/issues"
+  },
   "type": "module",
-  "version": "0.0.1",
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.7.1"
+  },
+  "homepage": "https://www.gruposiotec.com",
+  "version": "1.1.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,14 +35,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/prefetch": "^0.3.0",
-    "@astrojs/react": "^2.2.1",
-    "@astrojs/sitemap": "^2.0.1",
-    "@astrojs/tailwind": "^4.0.0",
+    "@astrojs/prefetch": "^0.4.0",
+    "@astrojs/react": "^3.0.1",
+    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/tailwind": "^5.0.0",
     "@emailjs/browser": "^3.11.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
-    "astro": "^2.7.4",
+    "astro": "^3.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.1",
