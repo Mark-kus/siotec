@@ -81,6 +81,13 @@ const servicios: Servicio[] = [
     Aplicación en líneas de producción: BPM, HACCP, POES, Sellado y etiquetado de productos.`,
     icon: "fa-solid fa-vial"
   },
+  {
+    title: "DISEÑO TÉCNICO",
+    description: `Representaciónes gráficas, realización de documentación técnica, diseño de productos
+    y líneas de producción mediante variados softwares de diseño y modelado tales como AutoCAD, SketchUP,
+    Revit y Rhinoceros.`,
+    icon: "fa-solid fa-pen-ruler"
+  },
 ];
 
 export default servicios;
