@@ -22,11 +22,11 @@ const clsContainers = "border border-light-page-text";
 
   <div class={`${clsContainers} mt-2 w-full`}>
     <h1 class={`${clsTitle}`}>¿Cuales son nuestros valores?</h1>
-    <p>
+    <p class="grid grid-cols-2 md:grid-cols-5">
       {
         siotec.values.map((value, i) => (
           <>
-            <span class="m-4">{value}</span>
+            <span class="mr-4">{value}</span>
           </>
         ))
       }

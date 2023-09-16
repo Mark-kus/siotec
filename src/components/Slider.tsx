@@ -29,20 +29,20 @@ const Slider: React.FC<SliderProps> = ({ data }) => {
                 }}
             >
                 {data.map((item, index) => (
-                    <div key={index} className="w-1/3 h-fit p-4 m-auto">
+                    <div key={index} className="w-1/3 h-fit p-6 m-auto">
                         <Card data={item} />
                     </div>
                 ))}
             </div>
             <button
                 onClick={handlePrevSlide}
-                className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-2"
+                className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-3"
             >
                 &lt;
             </button>
             <button
                 onClick={handleNextSlide}
-                className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-2"
+                className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-3"
             >
                 &gt;
             </button>
