@@ -5,7 +5,7 @@ import title from '/siotec.svg?url'
 const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false)
 
-  const hamburgerCls = "my-1 block h-0.5 rounded-sm bg-white transition-all duration-400"
+  const hamburgerCls = "my-1 block rounded-sm bg-white transition-all duration-400"
 
   return (
     <header className="md:flex md:justify-between fixed w-full z-10 bg-light-header-background dark:bg-dark-header-background text-light-header-text shadow">
