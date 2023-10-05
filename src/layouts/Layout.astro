@@ -8,6 +8,7 @@ const { title } = Astro.props;
 
 import Footer from "../containers/Footer.astro";
 import Header from "../components/Header";
+import { Analytics } from '@vercel/analytics/react';
 ---
 
 <!DOCTYPE html>
@@ -59,7 +60,7 @@ import Header from "../components/Header";
       src="https://kit.fontawesome.com/4652da1d0d.js"
       crossorigin="anonymous"></script>
 
-    <title>{title}</title>
+    <title>{title}</title>1
   </head>
 
   <body
@@ -68,5 +69,6 @@ import Header from "../components/Header";
     <Header client:load />
     <slot />
     <Footer />
+    <Analytics />
   </body>
 </html>
