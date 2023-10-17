@@ -10,9 +10,9 @@ const servicios: Servicio[] = [
   },
   {
     title: "MANTENIMIENTO INDUSTRIAL",
-    description: `Servicio de Gerenciamiento de Lubricación: Diseño y Montaje de Sistemas de Lubricación 
-    Centralizados Automáticos; Servicio de Alineación de Ejes (personal capacitado por SKF), además 
-    realizamos montaje y desmontaje de rodamientos, análisis de vibración y termografía.`,
+    description: `Se brindan servicios de mantenimiento en reductores, motores, cintas transportadoras, norias y
+    ollas industriales. Además se realizan soldaduras y montajes industriales, mantenimiento a
+    sistemas neumáticos y a envasadoras.`,
     icon: "fa-solid fa-wrench"
   },
   {

@@ -144,6 +144,19 @@ const data: Integrante[] = [
         ]
     },
     {
+        name: 'Tobías Melo',
+        description: 'Egresado de Técnico Electromecánico me dedique a la prestación de servicios\n' +
+            '        eléctricos por cuenta propia, mientras que a la vez brindaba mis servicios en\n' +
+            '        relación de dependencia en “Instalaciones Eléctricas Leonardo Cairo”.\n' +
+            '        Actualmente me dedico al Mantenimiento Industrial en Lasfor.',
+        tags: [
+            'Técnico en Electromecánica – EESTN°1 SADA',
+            'Electricista Domiciliario – Cuenta Propia',
+            'Electricista – Instalaciones Eléctricas Leonardo Cairo',
+            'Mantenimiento Industrial – Lasfor'
+        ]
+    },
+    {
         name: 'Gonzalo Perone',
         description: 'Me recibí de Técnico en Electromecánica y al siguiente año mientras me \n' +
             '        desarrollaba como Administrativo Municipal dentro de la Secretaría de \n' +
